@@ -169,6 +169,20 @@ function App() {
   const [history, setHistory] = useState([]);
   const [loggedInUsername, setLoggedInUsername] = useState("")
 
+  fetch(server + "api/getSessionUsername",
+  {
+    method: "POST",
+    credentials: "include",
+  })
+  .then(response => {
+    if (response.ok) {
+      return response.text();
+    }
+    return Promise.reject(response);
+  })
+  .then(username => setLoggedInUsername(username))
+  .catch(() => {});
+
   function shortenURL(e) {
     e.preventDefault();
 

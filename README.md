@@ -30,10 +30,10 @@ go run .
 Tog totalt ca. 1.5 veckor av programmering på vissa lektioner i skolan och några timmar
 på fritiden
 
-Kanske ~10 timmar?
+Kanske ~8-10 timmar?
 
 ## Eventuella förbättringar
-- Ctrl+r loggar ut användaren (fastän det inte gör det på servern)
+- Hanterar inte dag/natt tema eller mindre storlekar
 - Statistiken visar endast senaste 30 dagar. Trots att mer sparas. Kan optimeras.
 - Vissa ogiltiga länkar tillåts. Kan lösas enkelt. Designfråga.
 - Mer statisitk:
