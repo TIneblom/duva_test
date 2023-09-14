@@ -1,0 +1,193 @@
+/*
+  brukar använda https://tailwindcss.com/ så detta är inte bra (kändes onödigt att använda det nu)
+  - hanterar inte ljus/mörk tema eller andra skärmstorlkelar förutom min egen.
+*/
+
+.App {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  margin-top: 10px;
+}
+
+#loginPrompt {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  align-items: right;
+}
+
+#loginSection {
+  padding: 10px;
+}
+
+#loginSection form {
+  display: flex;
+  height: 40px;
+  margin-top: 5px;
+}
+
+#loginSection input {
+  min-width: 0;
+  border: 1px solid lightgray;
+}
+
+#logginStatus {
+  display: flex;
+  justify-content: space-between;
+}
+#logginStatus p {
+  margin: 0;
+  padding: 0;
+}
+
+#content {
+  display: flex;
+}
+
+button {
+  min-width: fit-content;
+  padding: 10px;
+  background-color: lightblue;
+  text-decoration: underline;
+
+  border: 1px solid black;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:active {
+  outline: 1px solid blue;
+  background-color: lightcyan;
+}
+
+button:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  background-color: white;
+  margin-right: 4px;
+  font-size: 0.8rem;
+  outline: none;
+  flex-grow: 1;
+  border-radius: 3px;
+
+}
+
+#shortenForm input {
+  border: 1px solid black;
+}
+
+input:focus {
+  outline: 1px solid blue;
+}
+
+.serverError {
+  color: red;
+  background-color: darkred;
+  padding: 10px;
+}
+
+div#result {
+  background-color: lightgreen; 
+  color: darkgreen;
+  padding: 10px;
+  margin-top: 1em;
+}
+
+.half {
+  flex-grow: 1;
+  width: 50%;
+}
+
+.right-half {
+  margin-left: 30px;
+}
+
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+
+#shortenForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 5px;
+  margin-right: 10px;
+  padding: 0px;
+  overflow: auto;
+  height: max-content;
+  width: 400px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 2px;
+  background-color: lightblue;
+}
+
+li:hover {
+  background-color: lightskyblue;
+}
+
+li:active {
+  background-color: skyblue;
+}
+
+#selected {
+  background-color: skyblue;
+}
+
+li button {
+  padding: 0;
+  font-size: 12px;
+  padding: 5px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+#statistics {
+  padding: 20px;
+  margin-top: 30px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+#statistics button {
+  margin-right: 5px;
+}
+
+#statistics-inner {
+  display: flex;
+}
